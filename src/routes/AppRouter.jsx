@@ -6,6 +6,8 @@ import Example from "../pages/Example";
 import Nesting from "../theories/01_Nesting";
 import Navbar from "./Navbar";
 
+import "../styles/css/index.css";
+
 function AppRouter() {
 	return (
 		<>

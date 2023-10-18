@@ -2,9 +2,9 @@ import "../styles/theories/css/01_Nesting.css";
 
 function Nesting() {
 	return (
-		<div>
-			<h2>선택과 중첩</h2>
-			<ul className="sns">
+		<div className="nesting">
+			<h2>선택자 중첩</h2>
+			<ul className="social">
 				<li>
 					<a href="#none">Facebook</a>
 				</li>

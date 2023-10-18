@@ -1,5 +1,26 @@
-.sns {
-	a {
-		text-decoration: none;
+.nesting {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.social {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 550px;
+	list-style: none;
+	li {
+		flex: 1;
+		padding: 10px;
+		text-align: center;
+		border: 1px solid #000;
+		a {
+			color: lightsteelblue;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family: "Montserrat", sans-serif;
+		}
 	}
 }
