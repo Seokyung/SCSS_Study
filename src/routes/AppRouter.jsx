@@ -3,10 +3,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Theory from "../pages/Theory";
 import Example from "../pages/Example";
-import Nesting from "../theories/01_Nesting";
 import Navbar from "./Navbar";
 
 import "../styles/css/index.css";
+import TheoryRouter from "./TheoryRouter";
 
 function AppRouter() {
 	return (
@@ -14,18 +14,10 @@ function AppRouter() {
 			<BrowserRouter>
 				<Navbar />
 				<Routes>
-					<Route path="/" element={<Home />}>
-						Home
-					</Route>
-					<Route path="/theories" element={<Theory />}>
-						Theories
-					</Route>
-					<Route path="/theories/1" element={<Nesting />}>
-						Theories
-					</Route>
-					<Route path="/examples" element={<Example />}>
-						Examples
-					</Route>
+					<Route path="/" element={<Home />} />
+					<Route path="/theories" element={<Theory />} />
+					<Route path="/theories/:chapter" element={<TheoryRouter />} />
+					<Route path="/examples" element={<Example />} />
 				</Routes>
 			</BrowserRouter>
 		</>

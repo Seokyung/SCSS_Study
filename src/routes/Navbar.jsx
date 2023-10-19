@@ -8,18 +8,10 @@ function Navbar() {
 	};
 
 	return (
-		<div>
-			<a href="/" onClick={() => onPageClick("")}>
-				Home
-			</a>
-			/
-			<a href="/theories" onClick={() => onPageClick("theories")}>
-				Theory
-			</a>
-			/
-			<a href="/examples" onClick={() => onPageClick("examples")}>
-				Example
-			</a>
+		<div className="menu">
+			<span onClick={() => onPageClick("")}>Home</span>/
+			<span onClick={() => onPageClick("theories")}>Theory</span>/
+			<span onClick={() => onPageClick("examples")}>Example</span>
 		</div>
 	);
 }

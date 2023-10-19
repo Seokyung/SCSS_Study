@@ -7,3 +7,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.menu ul {
+  list-style: none;
+}
+.menu ul li {
+  cursor: pointer;
+}
+.menu ul li:hover {
+  color: navy;
+}
+.menu span {
+  cursor: pointer;
+}
+.menu span:hover {
+  color: navy;
+}

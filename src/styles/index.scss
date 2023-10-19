@@ -2,10 +2,32 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Montserrat&family=Nanum+Pen+Script&family=Noto+Serif+KR&family=Song+Myung&display=swap");
 
+$primary-color: navy;
+$secondary-color: lightgrey;
+
 body {
 	margin: 0;
 	padding: 0;
 	font-family: "IBM Plex Sans KR", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.menu {
+	ul {
+		list-style: none;
+		li {
+			cursor: pointer;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+
+	span {
+		cursor: pointer;
+		&:hover {
+			color: $primary-color;
+		}
+	}
 }

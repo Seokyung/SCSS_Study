@@ -1,13 +1,21 @@
+import { useNavigate } from "react-router-dom";
+
 function Home() {
+	const navigate = useNavigate();
+
+	const gotoMenus = (menu) => {
+		navigate(`/${menu}`, { replace: true });
+	};
+
 	return (
-		<div>
+		<div className="menu">
 			<h1>SCSS 배우기</h1>
 			<ul>
 				<li>
-					<a href="/theories">핵심 이론</a>
+					<span onClick={() => gotoMenus("theories")}>핵심 이론</span>
 				</li>
 				<li>
-					<a href="/examples">핵심 이론 예제</a>
+					<span onClick={() => gotoMenus("examples")}>핵심 이론 예제</span>
 				</li>
 			</ul>
 		</div>
