@@ -16,7 +16,7 @@ function TheoryRouter() {
 		}
 	};
 
-	return <div>{renderLevelComponent()}</div>;
+	return <div className="theory-container">{renderLevelComponent()}</div>;
 }
 
 export default TheoryRouter;

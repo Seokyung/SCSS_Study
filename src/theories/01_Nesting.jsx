@@ -2,9 +2,9 @@ import "../styles/theories/css/01_Nesting.css";
 
 function Nesting() {
 	return (
-		<div className="nesting">
+		<>
 			<h2>01 선택자 중첩</h2>
-			<ul className="social">
+			<ul className="nesting-social">
 				<li>
 					<a href="#none">Facebook</a>
 				</li>
@@ -18,7 +18,7 @@ function Nesting() {
 					<a href="#none">Github</a>
 				</li>
 			</ul>
-		</div>
+		</>
 	);
 }
 

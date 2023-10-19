@@ -1,0 +1,67 @@
+.parent-selector {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.parent-selector-btn-outer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #222;
+	width: 75vw;
+	height: 300px;
+	padding: 1rem;
+	.btn {
+		position: relative;
+		display: block;
+		width: 300px;
+		height: 50px;
+		font-size: 1.5rem;
+		color: #fff;
+		text-align: center;
+		line-height: 50px;
+		text-transform: uppercase;
+		background-color: #555;
+		// border: 1px solid #fff;
+		transition-property: background-color;
+		transition-duration: 300ms;
+		transition-timing-function: ease-in-out;
+		&:hover {
+			background-color: transparent;
+		}
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			width: inherit;
+			height: inherit;
+			border: 1px solid #fff;
+			transition-property: transform, opacity;
+			transition-duration: 300ms;
+			transition-timing-function: ease-in-out;
+		}
+		&:hover::before {
+			opacity: 1;
+			transform: translateX(-20%) translateY(-10%);
+		}
+		&:hover::after {
+			opacity: 1;
+			transform: translateX(20%) translateY(10%);
+		}
+	}
+	span {
+		margin-top: 1.25rem;
+		font-size: 1.125rem;
+		color: #ddd;
+	}
+	#annotation {
+		margin-top: 0.75rem;
+		font-size: 0.875rem;
+	}
+}
