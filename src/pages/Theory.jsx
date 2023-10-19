@@ -1,15 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
-const theoryList = [
-	{
-		id: 1,
-		title: "01 선택과 중첩 (Nesting)",
-	},
-	{
-		id: 2,
-		title: "02 부모 선택자 참조(&)와 주석처리",
-	},
-];
+import { theoryList } from "../routes/TheoryRouter";
 
 function Theory() {
 	const navigate = useNavigate();
