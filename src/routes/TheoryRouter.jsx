@@ -13,6 +13,11 @@ export const theoryList = [
 		title: "02 부모 선택자 참조(&)와 주석처리",
 		component: <ParentSelector />,
 	},
+	{
+		id: 3,
+		title: "03 부모 선택자 참조(&) 응용",
+		component: "",
+	},
 ];
 
 function TheoryRouter() {

@@ -2,8 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Montserrat&family=Nanum+Pen+Script&family=Noto+Serif+KR&family=Song+Myung&display=swap");
 
-$primary-color: navy;
-$secondary-color: lightgrey;
+$primary-color: rgb(9, 9, 75);
+$secondary-color: #555;
+$hover-color: royalblue;
 
 body {
 	margin: 0;
@@ -14,20 +15,51 @@ body {
 }
 
 .menu {
+	width: 100%;
+	height: 100%;
+	padding: 1.75rem;
+	h1 {
+		margin: 0;
+		color: $secondary-color;
+	}
 	ul {
 		list-style: none;
 		li {
 			cursor: pointer;
+			padding: 0.25rem;
+			transition-property: all;
+			transition-duration: 100ms;
+			transition-timing-function: ease-in-out;
 			&:hover {
-				color: $primary-color;
+				color: $hover-color;
+			}
+			span {
+				font-size: 1.125rem;
 			}
 		}
 	}
+}
 
+.nav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: $primary-color;
+	width: 100vw;
+	height: 10vh;
+	padding: 0.25rem;
+	padding-left: 1rem;
 	span {
 		cursor: pointer;
+		padding: 0.75rem;
+		color: aliceblue;
+		font-weight: 600;
+		text-transform: uppercase;
+		transition-property: all;
+		transition-duration: 200ms;
+		transition-timing-function: ease-in-out;
 		&:hover {
-			color: $primary-color;
+			color: $hover-color;
 		}
 	}
 }
