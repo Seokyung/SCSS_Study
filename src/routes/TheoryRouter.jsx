@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Nesting from "../theories/01_Nesting";
 import ParentSelector from "../theories/02_ParentSelector";
+import AdvancedParentSelector from "../theories/03_AdvancedParentSelector";
 
 export const theoryList = [
 	{
@@ -16,7 +17,7 @@ export const theoryList = [
 	{
 		id: 3,
 		title: "03 부모 선택자 참조(&) 응용",
-		component: "",
+		component: <AdvancedParentSelector />,
 	},
 ];
 

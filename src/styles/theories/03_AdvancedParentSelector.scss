@@ -1,0 +1,17 @@
+.advanced-parent-selector {
+	padding: 1rem;
+	text-transform: uppercase;
+	box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.3);
+	background-color: #fff;
+	#font {
+		&-lg {
+			color: crimson;
+		}
+		&-md {
+			color: yellowgreen;
+		}
+		&-sm {
+			color: royalblue;
+		}
+	}
+}
