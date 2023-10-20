@@ -1,0 +1,113 @@
+/* .selectors {
+	display: flex;
+	gap: 0.75rem;
+}
+
+// 태그와 함께 쓰는 선택자 - 클래스 선택자
+.btn {
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	&.confirm {
+		background-color: navy;
+		&:hover {
+			background-color: royalblue;
+		}
+	}
+
+	&.warning {
+		color: crimson;
+		background-color: gold;
+		&:hover {
+			background-color: goldenrod;
+		}
+	}
+} */
+
+.selectors {
+	display: flex;
+	gap: 0.75rem;
+}
+
+// 태그와 함께 쓰는 선택자 - 태그 선택자
+button.btn {
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	&.confirm {
+		background-color: navy;
+		&:hover {
+			background-color: royalblue;
+		}
+	}
+
+	&.warning {
+		color: crimson;
+		background-color: gold;
+		&:hover {
+			background-color: goldenrod;
+		}
+	}
+}
+
+// @.root {} - 부모 요소를 참조하지 않고 가장 상단으로 빼줌
+/* @at-root button.btn {
+	box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.35);
+} */
+
+// 태그 선택자
+/* a {
+	color: blue;
+} */
+
+// 클래스 선택자
+/* .selectors-red {
+	color: red;
+} */
+
+// 아이디 선택자
+/* #selectors-red {
+	color: rgb(157, 4, 4);
+} */
+
+// 태그와 함께 쓰는 선택자
+/* a.selectors-red {
+	font-size: 1.5rem;
+} */
+
+// 전체 선택자
+/* * {
+	background-color: #000;
+} */
+
+// 하위 선택자
+/* div span {
+	color: yellow;
+} */
+
+// 자식 선택자
+/* div > span {
+	color: yellowgreen;
+} */
+
+// 그룹 선택자
+/* b,
+span {
+	font-weight: 700;
+} */

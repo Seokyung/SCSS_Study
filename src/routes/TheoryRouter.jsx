@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Nesting from "../theories/01_Nesting";
 import ParentSelector from "../theories/02_ParentSelector";
 import AdvancedParentSelector from "../theories/03_AdvancedParentSelector";
+import Selectors from "../theories/04_Selectors";
 
 export const theoryList = [
 	{
@@ -18,6 +19,11 @@ export const theoryList = [
 		id: 3,
 		title: "03 부모 선택자 참조(&) 응용",
 		component: <AdvancedParentSelector />,
+	},
+	{
+		id: 4,
+		title: "04 대표적인 CSS 선택자 SCSS에서 만들기",
+		component: <Selectors />,
 	},
 ];
 

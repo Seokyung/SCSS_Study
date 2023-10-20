@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* .selectors {
+	display: flex;
+	gap: 0.75rem;
+}
+
+// 태그와 함께 쓰는 선택자 - 클래스 선택자
+.btn {
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	&.confirm {
+		background-color: navy;
+		&:hover {
+			background-color: royalblue;
+		}
+	}
+
+	&.warning {
+		color: crimson;
+		background-color: gold;
+		&:hover {
+			background-color: goldenrod;
+		}
+	}
+} */
+.selectors {
+  display: flex;
+  gap: 0.75rem;
+}
+
+button.btn {
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+button.btn.confirm {
+  background-color: navy;
+}
+button.btn.confirm:hover {
+  background-color: royalblue;
+}
+button.btn.warning {
+  color: crimson;
+  background-color: gold;
+}
+button.btn.warning:hover {
+  background-color: goldenrod;
+}
+
+/* @at-root button.btn {
+	box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.35);
+} */
+/* a {
+	color: blue;
+} */
+/* .selectors-red {
+	color: red;
+} */
+/* #selectors-red {
+	color: rgb(157, 4, 4);
+} */
+/* a.selectors-red {
+	font-size: 1.5rem;
+} */
+/* * {
+	background-color: #000;
+} */
+/* div span {
+	color: yellow;
+} */
+/* div > span {
+	color: yellowgreen;
+} */
+/* b,
+span {
+	font-weight: 700;
+} */
