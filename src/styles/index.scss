@@ -117,16 +117,17 @@ button {
 	#prev-btn {
 		position: absolute;
 		top: 0.75rem;
-		right: 1.25rem;
+		right: 1.125rem;
 		padding: 0;
 		color: #777;
-		font-size: 1.75rem;
 		border: none;
 		background: none;
-
 		transition-property: color;
 		transition-duration: 0.25s;
 		transition-timing-function: ease-in-out;
+		span {
+			font-size: 2rem;
+		}
 		&:hover {
 			color: #333;
 		}
