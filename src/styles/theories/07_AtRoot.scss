@@ -1,0 +1,11 @@
+.at-root-frame {
+	padding: 1rem 1.5rem;
+	border: 1px solid #000;
+
+	// @at-root: 클래스를 중첩 밖(root)으로 내보내는 키워드
+	@at-root .heading {
+		color: crimson;
+		font-size: 2.5rem;
+		font-weight: normal;
+	}
+}

@@ -5,6 +5,7 @@ import AdvancedParentSelector from "../theories/03_AdvancedParentSelector";
 import Selectors from "../theories/04_Selectors";
 import VirtualClass from "../theories/05_VirtualClass";
 import { AttributeSelectors } from "../theories/06_AttributeSelectors";
+import { AtRoot } from "../theories/07_AtRoot";
 
 export const theoryList = [
 	{
@@ -36,6 +37,11 @@ export const theoryList = [
 		id: 6,
 		title: "06 부모 선택자 참조(&) 속성선택자",
 		component: <AttributeSelectors />,
+	},
+	{
+		id: 7,
+		title: "07 부모 선택자 중첩 나가기 @at-root",
+		component: <AtRoot />,
 	},
 ];
 
