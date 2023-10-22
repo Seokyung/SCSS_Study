@@ -54,7 +54,9 @@ function TheoryRouter() {
 
 	return (
 		<div className="theory-container">
-			<button onClick={gotoPrevPage}>✕</button>
+			<button id="prev-btn" onClick={gotoPrevPage}>
+				✕
+			</button>
 			<div id="header">
 				<h2>{theoryList[chapter - 1].title}</h2>
 			</div>
