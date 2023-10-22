@@ -5,7 +5,7 @@ function Theory() {
 	const navigate = useNavigate();
 
 	const gotoTheory = (chapter) => {
-		navigate(`${chapter}`, { replace: true });
+		navigate(`${chapter}`);
 	};
 
 	return (

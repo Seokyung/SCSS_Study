@@ -4,7 +4,7 @@ function Home() {
 	const navigate = useNavigate();
 
 	const gotoMenus = (menu) => {
-		navigate(`/${menu}`, { replace: true });
+		navigate(`/${menu}`);
 	};
 
 	return (

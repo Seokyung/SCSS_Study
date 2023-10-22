@@ -10,17 +10,19 @@ import "../styles/index.scss";
 
 function AppRouter() {
 	return (
-		<>
+		<div className="wrapper">
 			<BrowserRouter>
 				<Navbar />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/theories" element={<Theory />} />
-					<Route path="/theories/:chapter" element={<TheoryRouter />} />
-					<Route path="/examples" element={<Example />} />
-				</Routes>
+				<div className="route-content">
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/theories" element={<Theory />} />
+						<Route path="/theories/:chapter" element={<TheoryRouter />} />
+						<Route path="/examples" element={<Example />} />
+					</Routes>
+				</div>
 			</BrowserRouter>
-		</>
+		</div>
 	);
 }
 

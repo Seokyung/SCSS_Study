@@ -1,9 +1,10 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Nesting from "../theories/01_Nesting";
 import ParentSelector from "../theories/02_ParentSelector";
 import AdvancedParentSelector from "../theories/03_AdvancedParentSelector";
 import Selectors from "../theories/04_Selectors";
 import VirtualClass from "../theories/05_VirtualClass";
+import { AttributeSelectors } from "../theories/06_AttributeSelectors";
 
 export const theoryList = [
 	{
@@ -31,17 +32,35 @@ export const theoryList = [
 		title: "05 부모 선택자 참조(&) 가상클래스",
 		component: <VirtualClass />,
 	},
+	{
+		id: 6,
+		title: "06 부모 선택자 참조(&) 속성선택자",
+		component: <AttributeSelectors />,
+	},
 ];
 
 function TheoryRouter() {
 	const chapter = Number(useParams().chapter);
+	const navigate = useNavigate();
 
 	const renderTheoryComponent = () => {
 		const newComponent = theoryList.filter((el) => chapter === el.id);
 		return newComponent[0].component;
 	};
 
-	return <div className="theory-container">{renderTheoryComponent()}</div>;
+	const gotoPrevPage = () => {
+		navigate("/theories");
+	};
+
+	return (
+		<div className="theory-container">
+			<button onClick={gotoPrevPage}>✕</button>
+			<div id="header">
+				<h2>{theoryList[chapter - 1].title}</h2>
+			</div>
+			<div id="content">{renderTheoryComponent()}</div>
+		</div>
+	);
 }
 
 export default TheoryRouter;

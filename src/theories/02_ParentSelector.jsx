@@ -10,7 +10,6 @@ function ParentSelector() {
 
 	return (
 		<>
-			<h2>02 부모 선택자 참조(&)와 주석처리</h2>
 			<div className="parent-selector-btn-outer">
 				<div className="btn" onClick={onBtnClick}>
 					What is '&'?

@@ -4,7 +4,7 @@ function Navbar() {
 	const navigate = useNavigate();
 
 	const onPageClick = (page) => {
-		navigate(`/${page}`, { replace: true });
+		navigate(`/${page}`);
 	};
 
 	return (

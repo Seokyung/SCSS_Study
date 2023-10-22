@@ -3,7 +3,6 @@ import "../styles/theories/04_Selectors.scss";
 function Selectors() {
 	return (
 		<>
-			<h2>04 대표적인 CSS 선택자 SCSS에서 만들기</h2>
 			<div className="selectors">
 				<button className="selectors-btn confirm">Confirm</button>
 				<button className="selectors-btn warning">Warning</button>
