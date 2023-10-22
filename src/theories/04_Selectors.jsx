@@ -1,4 +1,4 @@
-import "../styles/theories/css/04_Selectors.css";
+import "../styles/theories/04_Selectors.scss";
 
 function Selectors() {
 	return (

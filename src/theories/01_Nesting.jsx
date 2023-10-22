@@ -1,4 +1,4 @@
-import "../styles/theories/css/01_Nesting.css";
+import "../styles/theories/01_Nesting.scss";
 
 function Nesting() {
 	return (

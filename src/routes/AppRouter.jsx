@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./Navbar";
 import Home from "../pages/Home";
 import Theory from "../pages/Theory";
 import Example from "../pages/Example";
-import Navbar from "./Navbar";
-
-import "../styles/css/index.css";
 import TheoryRouter from "./TheoryRouter";
+
+import "../styles/index.scss";
 
 function AppRouter() {
 	return (

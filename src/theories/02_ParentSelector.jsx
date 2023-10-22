@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/theories/css/02_ParentSelector.css";
+import "../styles/theories/02_ParentSelector.scss";
 
 function ParentSelector() {
 	const [isBtnClicked, setIsBtnClicked] = useState(false);

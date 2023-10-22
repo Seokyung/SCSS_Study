@@ -1,4 +1,4 @@
-import "../styles/theories/css/03_AdvancedParentSelector.css";
+import "../styles/theories/03_AdvancedParentSelector.scss";
 
 function AdvancedParentSelector() {
 	return (

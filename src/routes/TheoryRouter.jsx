@@ -3,6 +3,7 @@ import Nesting from "../theories/01_Nesting";
 import ParentSelector from "../theories/02_ParentSelector";
 import AdvancedParentSelector from "../theories/03_AdvancedParentSelector";
 import Selectors from "../theories/04_Selectors";
+import VirtualClass from "../theories/05_VirtualClass";
 
 export const theoryList = [
 	{
@@ -24,6 +25,11 @@ export const theoryList = [
 		id: 4,
 		title: "04 대표적인 CSS 선택자 SCSS에서 만들기",
 		component: <Selectors />,
+	},
+	{
+		id: 5,
+		title: "05 부모 선택자 참조(&) 가상클래스",
+		component: <VirtualClass />,
 	},
 ];
 
