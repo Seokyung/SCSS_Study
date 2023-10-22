@@ -1,6 +1,6 @@
 import "../styles/theories/07_AtRoot.scss";
 
-export function AtRoot() {
+export default function AtRoot() {
 	return (
 		<>
 			<div className="at-root-frame">

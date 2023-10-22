@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+.prefix-portfolio {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	p {
+		margin: 0;
+		line-height: 1.75rem;
+		// font 접두어(prefix) 사용
+		font: {
+			family: "Merriweather", serif;
+			size: 1.25rem;
+			weight: 500;
+		}
+		// text 접두어(prefix) 사용
+		text: {
+			overflow: hidden;
+			transform: uppercase;
+		}
+	}
+}

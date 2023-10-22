@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/theories/06_AttributeSelectors.scss";
 
-export function AttributeSelectors() {
+export default function AttributeSelectors() {
 	const [email, setEmail] = useState("");
 	const [passwd, setPasswd] = useState("");
 	const [isChecked, setIsChecked] = useState(true);
