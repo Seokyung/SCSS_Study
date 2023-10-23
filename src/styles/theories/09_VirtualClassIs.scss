@@ -1,0 +1,34 @@
+.is-container {
+	// :is 선택자 사용 X 코드
+	// header h1,
+	// section h1,
+	// footer h1 {
+	// 	// CSS
+	// }
+	// header h1::before,
+	// section h1::before,
+	// footer h1::before {
+	// 	// CSS
+	// }
+
+	// :is 선택자 사용 O 코드
+	// :is 선택자 사용하면 위 코드처럼 길게 선택자 나열하지 않고도 사용할 수 있음
+	& :is(header, section, footer) {
+		h1 {
+			display: flex;
+			align-items: center;
+			font-size: 2rem;
+			font-weight: normal;
+			background-color: lightyellow;
+			&::before {
+				content: "";
+				display: inline-block;
+				width: 8px;
+				height: 45px;
+				background-color: cadetblue;
+				border-radius: 3.5px;
+				margin-right: 0.5rem;
+			}
+		}
+	}
+}

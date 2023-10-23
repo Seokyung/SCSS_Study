@@ -7,6 +7,7 @@ import VirtualClass from "../theories/05_VirtualClass";
 import AttributeSelectors from "../theories/06_AttributeSelectors";
 import AtRoot from "../theories/07_AtRoot";
 import Prefix from "../theories/08_Prefix";
+import VirtualClassIs from "../theories/09_VirtualClassIs";
 
 export const theoryList = [
 	{
@@ -49,6 +50,11 @@ export const theoryList = [
 		title: "08 접두어(prefix) 사용해서 CSS 속성 자동생성",
 		component: <Prefix />,
 	},
+	{
+		id: 9,
+		title: "09 가상클래스 :is로 선택자 중복 줄이기",
+		component: <VirtualClassIs />,
+	},
 ];
 
 function TheoryRouter() {
@@ -67,7 +73,7 @@ function TheoryRouter() {
 	return (
 		<div className="theory-container">
 			<button id="prev-btn" onClick={gotoPrevPage}>
-				✕
+				<span className="material-symbols-outlined">close</span>
 			</button>
 			<div id="header">
 				<h2>{theoryList[chapter - 1].title}</h2>
