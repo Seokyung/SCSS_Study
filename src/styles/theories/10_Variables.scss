@@ -1,10 +1,32 @@
 /* Variables */
+// 전역변수로 선언
 $primary-color: royalblue;
 $primary-hover-color: rgb(126, 158, 253);
 $secondary-color: lavender;
 $secondary-hover-color: rgb(140, 140, 195);
 $warning-color: maroon;
 $warning-hover-color: rgb(185, 18, 18);
+
+// 지역변수로 선언한 변수를 다른 스코프 안에서 사용할 시 오류 발생함
+/*
+.variables-btn-container {
+	.variables-btn {
+		$primary-color: green; // 오류 발생
+	}
+}
+*/
+
+// CSS에서의 변수 사용
+/*
+// 변수 선언
+:root {
+	--primary-color: green;
+}
+// 변수 사용
+.variables-btn-container .variables-btn {
+	background-color: var(--primary-color);
+}
+*/
 
 /* Buttons */
 .variables-btn-container {
