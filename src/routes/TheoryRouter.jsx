@@ -8,6 +8,7 @@ import AttributeSelectors from "../theories/06_AttributeSelectors";
 import AtRoot from "../theories/07_AtRoot";
 import Prefix from "../theories/08_Prefix";
 import VirtualClassIs from "../theories/09_VirtualClassIs";
+import Variables from "../theories/10_Variables";
 
 export const theoryList = [
 	{
@@ -57,8 +58,8 @@ export const theoryList = [
 	},
 	{
 		id: 10,
-		title: "10 변수(Variables) #1",
-		component: <VirtualClassIs />,
+		title: "10 변수(Variables)",
+		component: <Variables />,
 	},
 ];
 

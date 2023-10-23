@@ -1,0 +1,59 @@
+/* Variables */
+$primary-color: royalblue;
+$primary-hover-color: rgb(126, 158, 253);
+$secondary-color: lavender;
+$secondary-hover-color: rgb(140, 140, 195);
+$warning-color: maroon;
+$warning-hover-color: rgb(185, 18, 18);
+
+.variables {
+	display: flex;
+	gap: 0.5rem;
+	& > div {
+		border: 1px solid #333;
+		padding: 1rem;
+		border-radius: 5px;
+	}
+	h3 {
+		margin-top: 0;
+		color: #333;
+		font-weight: 500;
+	}
+}
+
+/* Buttons */
+.variables-btn-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.375rem;
+	.variables-btn {
+		padding: 0.75rem 2rem;
+		color: white;
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 3px;
+		transition-property: background-color;
+		transition-duration: 0.25s;
+		transition-timing-function: ease-in-out;
+	}
+	.primary {
+		background-color: $primary-color;
+		&:hover {
+			background-color: $primary-hover-color;
+		}
+	}
+	.secondary {
+		color: #333;
+		background-color: $secondary-color;
+		&:hover {
+			background-color: $secondary-hover-color;
+		}
+	}
+	.warning {
+		background-color: $warning-color;
+		&:hover {
+			background-color: $warning-hover-color;
+		}
+	}
+}
