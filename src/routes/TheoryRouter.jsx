@@ -9,6 +9,7 @@ import AtRoot from "../theories/07_AtRoot";
 import Prefix from "../theories/08_Prefix";
 import VirtualClassIs from "../theories/09_VirtualClassIs";
 import Variables from "../theories/10_Variables";
+import VariablesGrid from "../theories/11_VariablesGrid";
 
 export const theoryList = [
 	{
@@ -60,6 +61,11 @@ export const theoryList = [
 		id: 10,
 		title: "10 변수(Variables)",
 		component: <Variables />,
+	},
+	{
+		id: 11,
+		title: "11 변수 사용하여 Grid 만들기",
+		component: <VariablesGrid />,
 	},
 ];
 

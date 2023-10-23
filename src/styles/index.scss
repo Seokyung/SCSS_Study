@@ -112,7 +112,7 @@ button {
 	#prev-btn {
 		position: absolute;
 		top: 0.75rem;
-		right: 1.125rem;
+		right: 1rem;
 		padding: 0;
 		color: #777;
 		border: none;
@@ -121,7 +121,7 @@ button {
 		transition-duration: 0.25s;
 		transition-timing-function: ease-in-out;
 		span {
-			font-size: 2rem;
+			font-size: 1.75rem;
 		}
 		&:hover {
 			color: #333;
@@ -142,9 +142,9 @@ button {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 100%;
+		width: auto;
 		height: 100%;
 		padding: 1rem;
-		overflow-y: auto;
+		overflow: auto;
 	}
 }
