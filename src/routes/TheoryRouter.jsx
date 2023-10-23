@@ -55,6 +55,11 @@ export const theoryList = [
 		title: "09 가상클래스 :is로 선택자 중복 줄이기",
 		component: <VirtualClassIs />,
 	},
+	{
+		id: 10,
+		title: "10 변수(Variables) #1",
+		component: <VirtualClassIs />,
+	},
 ];
 
 function TheoryRouter() {
