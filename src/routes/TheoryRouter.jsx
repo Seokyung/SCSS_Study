@@ -11,11 +11,12 @@ import VirtualClassIs from "../theories/09_VirtualClassIs";
 import Variables from "../theories/10_Variables";
 import VariablesGrid from "../theories/11_VariablesGrid";
 import ImportFile from "../theories/12_ImportFile";
+import Operators from "../theories/13_Operators";
 
 export const theoryList = [
 	{
 		id: 1,
-		title: "01.선택과 중첩 (Nesting)",
+		title: "01. 선택과 중첩 (Nesting)",
 		component: <Nesting />,
 	},
 	{
@@ -72,6 +73,11 @@ export const theoryList = [
 		id: 12,
 		title: "12. @import 활용 - 외부파일 가져오기",
 		component: <ImportFile />,
+	},
+	{
+		id: 13,
+		title: "13. 연산자(Operators)",
+		component: <Operators />,
 	},
 ];
 

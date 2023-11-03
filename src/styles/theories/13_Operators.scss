@@ -1,0 +1,21 @@
+$font-size-default: 16px;
+$box-margin: 50px;
+
+.operators-container {
+	display: flex;
+	flex-direction: column;
+	margin: $box-margin / 2;
+	padding: 10px + 10px;
+	border: 1px solid #333;
+	h2 {
+		margin: 0.75rem;
+		font-size: $font-size-default * 3;
+	}
+	p {
+		margin: 50px % 9;
+		padding: ($box-margin / 2);
+		color: #333;
+		font-size: calc(9px * 2);
+		border: 1px solid #888;
+	}
+}
