@@ -10,6 +10,7 @@ import Prefix from "../theories/08_Prefix";
 import VirtualClassIs from "../theories/09_VirtualClassIs";
 import Variables from "../theories/10_Variables";
 import VariablesGrid from "../theories/11_VariablesGrid";
+import ImportFile from "../theories/12_ImportFile";
 
 export const theoryList = [
 	{
@@ -66,6 +67,11 @@ export const theoryList = [
 		id: 11,
 		title: "11 변수 사용하여 Grid 만들기",
 		component: <VariablesGrid />,
+	},
+	{
+		id: 12,
+		title: "12 외부파일 가져오기 @import",
+		component: <ImportFile />,
 	},
 ];
 

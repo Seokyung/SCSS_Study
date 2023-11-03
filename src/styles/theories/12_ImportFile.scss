@@ -1,0 +1,17 @@
+// @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway&display=swap");
+
+// css에서의 파일 @import 사용
+// @import url("../reset.scss");
+
+// scss에서의 파일 @import 사용
+// @import "../reset";
+
+.import-file-container {
+	div {
+		padding: 0.5rem;
+	}
+	p,
+	li {
+		font-family: "Raleway", sans-serif;
+	}
+}
