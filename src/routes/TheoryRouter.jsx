@@ -15,62 +15,62 @@ import ImportFile from "../theories/12_ImportFile";
 export const theoryList = [
 	{
 		id: 1,
-		title: "01 선택과 중첩 (Nesting)",
+		title: "01.선택과 중첩 (Nesting)",
 		component: <Nesting />,
 	},
 	{
 		id: 2,
-		title: "02 부모 선택자 참조(&)와 주석처리",
+		title: "02. 부모 선택자 참조(&)와 주석처리",
 		component: <ParentSelector />,
 	},
 	{
 		id: 3,
-		title: "03 부모 선택자 참조(&) 응용",
+		title: "03. 부모 선택자 참조(&) 응용",
 		component: <AdvancedParentSelector />,
 	},
 	{
 		id: 4,
-		title: "04 대표적인 CSS 선택자 SCSS에서 만들기",
+		title: "04. 대표적인 CSS 선택자 SCSS에서 만들기",
 		component: <Selectors />,
 	},
 	{
 		id: 5,
-		title: "05 부모 선택자 참조(&) 가상클래스",
+		title: "05. 부모 선택자 참조(&) 가상클래스",
 		component: <VirtualClass />,
 	},
 	{
 		id: 6,
-		title: "06 부모 선택자 참조(&) 속성선택자",
+		title: "06.부모 선택자 참조(&) 속성선택자",
 		component: <AttributeSelectors />,
 	},
 	{
 		id: 7,
-		title: "07 부모 선택자 중첩 나가기 @at-root",
+		title: "07. 부모 선택자 중첩 나가기 @at-root",
 		component: <AtRoot />,
 	},
 	{
 		id: 8,
-		title: "08 접두어(prefix) 사용해서 CSS 속성 자동생성",
+		title: "08. 접두어(prefix) 사용해서 CSS 속성 자동생성",
 		component: <Prefix />,
 	},
 	{
 		id: 9,
-		title: "09 가상클래스 :is로 선택자 중복 줄이기",
+		title: "09. 가상클래스 :is로 선택자 중복 줄이기",
 		component: <VirtualClassIs />,
 	},
 	{
 		id: 10,
-		title: "10 변수(Variables)",
+		title: "10. 변수(Variables)",
 		component: <Variables />,
 	},
 	{
 		id: 11,
-		title: "11 변수 사용하여 Grid 만들기",
+		title: "11. 변수 사용하여 Grid 만들기",
 		component: <VariablesGrid />,
 	},
 	{
 		id: 12,
-		title: "12 외부파일 가져오기 @import",
+		title: "12. @import 활용 - 외부파일 가져오기",
 		component: <ImportFile />,
 	},
 ];

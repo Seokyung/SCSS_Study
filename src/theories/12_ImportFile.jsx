@@ -3,8 +3,8 @@ import "../styles/theories/12_ImportFile.scss";
 export default function ImportFile() {
 	return (
 		<div className="import-file-container">
-			<div>
-				<h1>Scss @import rule</h1>
+			<h1>Scss @import rule</h1>
+			<div className="local-file-container">
 				<p>
 					Sass extends CSS’s @import rule with the ability to import Sass and
 					CSS stylesheets, providing access to mixins, functions, and variables
@@ -14,7 +14,7 @@ export default function ImportFile() {
 					compilation.
 				</p>
 			</div>
-			<div>
+			<div className="imported-file-container">
 				<h4>What’s Wrong With @import?</h4>
 				<h5>The @import rule has a number of serious issues:</h5>
 				<ul>

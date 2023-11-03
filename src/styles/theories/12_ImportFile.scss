@@ -1,4 +1,4 @@
-// @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway&display=swap");
 
 // css에서의 파일 @import 사용
 // @import url("../reset.scss");
@@ -6,12 +6,19 @@
 // scss에서의 파일 @import 사용
 // @import "../reset";
 
+@import "./12_PartialImportFile.scss";
+
 .import-file-container {
 	div {
-		padding: 0.5rem;
+		margin: 0.5rem;
+		padding: 0.25rem;
+		border-radius: 10px;
 	}
 	p,
 	li {
 		font-family: "Raleway", sans-serif;
+	}
+	.local-file-container {
+		background-color: aliceblue;
 	}
 }
