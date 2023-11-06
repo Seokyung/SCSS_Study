@@ -1,0 +1,60 @@
+// variables
+$complete-color: steelblue;
+$sending-color: forestgreen;
+$error-color: indianred;
+$default-color: #444;
+
+// @mixin
+@mixin status-btn {
+	button {
+		width: 100%;
+		padding: 0.5rem;
+		color: $default-color;
+		font-size: 1.375rem;
+		border-radius: 10px;
+		border: 3px solid $default-color;
+		background-color: #fff;
+		outline: none;
+		transition-property: all;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-in-out;
+		&:hover {
+			color: #fff !important;
+			background-color: $default-color;
+		}
+		&#complete:hover {
+			// color: #fff;
+			background-color: $complete-color;
+		}
+		&#sending:hover {
+			// color: #fff;
+			background-color: $sending-color;
+		}
+		&#error:hover {
+			// color: #fff;
+			background-color: $error-color;
+		}
+	}
+}
+
+.advanced-mixin-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.75rem;
+	width: 85%;
+	height: 100%;
+	@include status-btn;
+	#complete {
+		color: $complete-color;
+		border: 3px solid $complete-color;
+	}
+	#sending {
+		color: $sending-color;
+		border: 3px solid $sending-color;
+	}
+	#error {
+		color: $error-color;
+		border: 3px solid $error-color;
+	}
+}

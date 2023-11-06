@@ -13,6 +13,7 @@ import VariablesGrid from "../theories/11_VariablesGrid";
 import ImportFile from "../theories/12_ImportFile";
 import Operators from "../theories/13_Operators";
 import Mixin from "../theories/14_Mixin";
+import AdvancedMixin from "../theories/15_AdvancedMixin";
 
 export const theoryList = [
 	{
@@ -84,6 +85,11 @@ export const theoryList = [
 		id: 14,
 		title: "14. 그룹 선언하기 @mixin, 그룹 사용하기 @include",
 		component: <Mixin />,
+	},
+	{
+		id: 15,
+		title: "15. @mixin과 @include의 활용",
+		component: <AdvancedMixin />,
 	},
 ];
 
