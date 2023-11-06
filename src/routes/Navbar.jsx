@@ -13,6 +13,7 @@ function Navbar() {
 				<span onClick={() => onPageClick("")}>Home</span>
 				<span onClick={() => onPageClick("theories")}>Theory</span>
 				<span onClick={() => onPageClick("examples")}>Example</span>
+				<span onClick={() => onPageClick("exercises")}>Exercise</span>
 			</div>
 		</div>
 	);
