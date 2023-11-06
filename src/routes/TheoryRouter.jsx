@@ -17,6 +17,7 @@ import AdvancedMixin from "../theories/15_AdvancedMixin";
 import MixinArgs from "../theories/16_MixinArgs";
 import Extend from "../theories/17_Extend";
 import PlaceHolder from "../theories/18_PlaceHolder";
+import MapGet from "../theories/19_MapGet";
 
 export const theoryList = [
 	{
@@ -108,6 +109,11 @@ export const theoryList = [
 		id: 18,
 		title: "18. @extend와 함께 사용하는 플레이스 홀더 선택자 %",
 		component: <PlaceHolder />,
+	},
+	{
+		id: 19,
+		title: "19. 다중 변수 선언, 내장 함수(map-get)",
+		component: <MapGet />,
 	},
 ];
 
