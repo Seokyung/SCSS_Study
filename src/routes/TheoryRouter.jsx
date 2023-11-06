@@ -12,6 +12,7 @@ import Variables from "../theories/10_Variables";
 import VariablesGrid from "../theories/11_VariablesGrid";
 import ImportFile from "../theories/12_ImportFile";
 import Operators from "../theories/13_Operators";
+import Mixin from "../theories/14_Mixin";
 
 export const theoryList = [
 	{
@@ -78,6 +79,11 @@ export const theoryList = [
 		id: 13,
 		title: "13. 연산자(Operators)",
 		component: <Operators />,
+	},
+	{
+		id: 14,
+		title: "14. 그룹 선언하기 @mixin, 그룹 사용하기 @include",
+		component: <Mixin />,
 	},
 ];
 
