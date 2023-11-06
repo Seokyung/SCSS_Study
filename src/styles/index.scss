@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+@import "mixin";
+
 $primary-color: rgb(9, 9, 75);
 $secondary-color: #555;
 $hover-color: royalblue;
@@ -11,12 +13,7 @@ $hover-color: royalblue;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: "Montserrat", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background-color: $secondary-color;
+	@include default;
 }
 
 button {
