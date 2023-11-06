@@ -1,0 +1,27 @@
+@mixin border-style($width, $style, $color) {
+	border: $width $style $color;
+}
+@mixin btn-padding($up-down, $left-right) {
+	padding: $up-down $left-right;
+}
+
+.mixin-args-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5rem;
+	width: 80%;
+	height: 100%;
+	button {
+		@include btn-padding(1.75rem, 5rem);
+		font-size: 1.5rem;
+		background-color: #fff;
+		outline: none;
+		&#approve {
+			@include border-style(3px, solid, blue);
+		}
+		&#refuse {
+			@include border-style(3px, dashed, red);
+		}
+	}
+}

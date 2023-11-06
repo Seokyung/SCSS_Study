@@ -14,6 +14,7 @@ import ImportFile from "../theories/12_ImportFile";
 import Operators from "../theories/13_Operators";
 import Mixin from "../theories/14_Mixin";
 import AdvancedMixin from "../theories/15_AdvancedMixin";
+import MixinArgs from "../theories/16_MixinArgs";
 
 export const theoryList = [
 	{
@@ -90,6 +91,11 @@ export const theoryList = [
 		id: 15,
 		title: "15. @mixin과 @include의 활용",
 		component: <AdvancedMixin />,
+	},
+	{
+		id: 16,
+		title: "16. @mixin의 매개변수(인수)를 @include로 사용하기",
+		component: <MixinArgs />,
 	},
 ];
 
