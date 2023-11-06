@@ -16,6 +16,7 @@ import Mixin from "../theories/14_Mixin";
 import AdvancedMixin from "../theories/15_AdvancedMixin";
 import MixinArgs from "../theories/16_MixinArgs";
 import Extend from "../theories/17_Extend";
+import PlaceHolder from "../theories/18_PlaceHolder";
 
 export const theoryList = [
 	{
@@ -102,6 +103,11 @@ export const theoryList = [
 		id: 17,
 		title: "17. @extend로 선택자 속성 가져오기",
 		component: <Extend />,
+	},
+	{
+		id: 18,
+		title: "18. @extend와 함께 사용하는 플레이스 홀더 선택자 %",
+		component: <PlaceHolder />,
 	},
 ];
 
