@@ -15,6 +15,7 @@ import Operators from "../theories/13_Operators";
 import Mixin from "../theories/14_Mixin";
 import AdvancedMixin from "../theories/15_AdvancedMixin";
 import MixinArgs from "../theories/16_MixinArgs";
+import Extend from "../theories/17_Extend";
 
 export const theoryList = [
 	{
@@ -96,6 +97,11 @@ export const theoryList = [
 		id: 16,
 		title: "16. @mixin의 매개변수(인수)를 @include로 사용하기",
 		component: <MixinArgs />,
+	},
+	{
+		id: 17,
+		title: "17. @extend로 선택자 속성 가져오기",
+		component: <Extend />,
 	},
 ];
 

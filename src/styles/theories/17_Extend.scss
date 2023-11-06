@@ -1,0 +1,40 @@
+.extend-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	#initial {
+		width: 200px;
+		padding: 0.5rem;
+		font-size: 1.25rem;
+		text-transform: capitalize;
+		background-color: #fff;
+		border-radius: 5px;
+		border-color: transparent;
+		border: 1px solid #000;
+		outline: none;
+	}
+	.extend-btns {
+		display: flex;
+		gap: 1rem;
+		button {
+			color: #fff;
+		}
+	}
+	#order {
+		@extend #initial;
+		border: 2px solid orange;
+		background-color: orange;
+	}
+	#add {
+		@extend #initial;
+		border: 2px solid yellowgreen;
+		background-color: yellowgreen;
+	}
+	#check-out {
+		@extend #initial;
+		color: crimson;
+		border: 2px solid crimson;
+	}
+}
