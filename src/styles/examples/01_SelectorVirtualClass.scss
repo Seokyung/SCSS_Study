@@ -1,0 +1,70 @@
+$items-width: 600px;
+
+.selector-container {
+	width: 100%;
+	hr {
+		margin: 1.5rem 0;
+		border: 0.5px solid #999;
+	}
+
+	/* Text Link Style */
+	a {
+		color: #000;
+		text-decoration: none;
+		&:hover {
+			color: blue;
+		}
+		&:active {
+			color: red;
+		}
+		&:visited {
+			color: purple;
+		}
+	}
+
+	/* Section Style */
+	section {
+		padding: 1.5rem;
+		border: 5px solid #333;
+		h1 {
+			margin-top: 0;
+			font-size: 2.5rem;
+			font-weight: normal;
+			text-align: center;
+		}
+		.section-inner {
+			display: flex;
+			justify-content: center;
+			border: 5px solid red;
+		}
+		.items {
+			// margin: auto;
+			display: flex;
+			width: $items-width;
+			border: 5px solid blue;
+			// 자식 선택자 >로 부모 바로 밑의 자식만 적용 (.items > div)
+			> div {
+				// float: left;
+				// width: (450px / 3);
+				// box-sizing: border-box;
+				flex: 1;
+				height: 200px;
+				color: #000;
+				border: 5px solid lightslategray;
+				&:first-child {
+					background-color: crimson;
+				}
+				&:nth-child(2) {
+					background-color: gold;
+				}
+				&:last-child {
+					background-color: forestgreen;
+				}
+				&:hover {
+					color: #fff;
+					background-color: #000;
+				}
+			}
+		}
+	}
+}

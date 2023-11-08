@@ -7,6 +7,7 @@ import Example from "../pages/Example";
 import TheoryRouter from "./TheoryRouter";
 import Exercise from "../pages/Exercise";
 import "../styles/index.scss";
+import ExampleRouter from "./ExampleRouter";
 
 function AppRouter() {
 	return (
@@ -19,6 +20,7 @@ function AppRouter() {
 						<Route path="/theories" element={<Theory />} />
 						<Route path="/theories/:chapter" element={<TheoryRouter />} />
 						<Route path="/examples" element={<Example />} />
+						<Route path="/examples/:chapter" element={<ExampleRouter />} />
 						<Route path="/exercises" element={<Exercise />} />
 					</Routes>
 				</div>
