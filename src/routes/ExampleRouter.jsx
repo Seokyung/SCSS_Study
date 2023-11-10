@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import SelectorVirtualClass from "../examples/01_SelectorVirtualClass";
 import ResetNormalize from "../examples/02_ResetNormalize";
+import NestedMixin from "../examples/03_NestedMixin";
 
 export const exampleList = [
 	{
@@ -12,6 +13,11 @@ export const exampleList = [
 		id: 2,
 		title: "02. @import로 reset.css와 normalize.css 연결하기",
 		component: <ResetNormalize />,
+	},
+	{
+		id: 3,
+		title: "03. @mixin을 중첩해 텍스트 서식 설정하기",
+		component: <NestedMixin />,
 	},
 ];
 

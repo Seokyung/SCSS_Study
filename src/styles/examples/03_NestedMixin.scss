@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Kanit&display=swap");
+
+// @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+$font-size-default: 16px;
+$font-family-default: "Edu TAS Beginner";
+$font-family-headline: "Kanit";
+
+// Mixins
+@mixin font-default {
+	font: {
+		size: $font-size-default + 2;
+		family: $font-family-default;
+		weight: 300;
+	}
+	color: #333;
+	line-height: 1.5rem;
+}
+
+@mixin font-headline {
+	font: {
+		size: $font-size-default * 1.5;
+		family: $font-family-headline;
+		weight: 600;
+	}
+	text-transform: uppercase;
+}
+
+@mixin large-headline {
+	@include font-headline;
+	font-size: $font-size-default * 3;
+	color: maroon;
+}
+@mixin medium-headline {
+	@include font-headline;
+	font-size: $font-size-default * 2.25;
+	color: indianred;
+}
+@mixin small-headline {
+	@include font-headline;
+	font-size: $font-size-default * 1.5;
+	color: darksalmon;
+}
+
+.nested-mixin-container {
+	@include font-default;
+	h1 {
+		@include large-headline;
+	}
+	h2 {
+		@include medium-headline;
+	}
+	h3 {
+		@include small-headline;
+	}
+	p {
+		@include font-default;
+	}
+}
