@@ -3,6 +3,7 @@ import SelectorVirtualClass from "../examples/01_SelectorVirtualClass";
 import ResetNormalize from "../examples/02_ResetNormalize";
 import NestedMixin from "../examples/03_NestedMixin";
 import MixinArray from "../examples/04_MixinArray";
+import ReuseEffects from "../examples/05_ReuseEffects";
 
 export const exampleList = [
 	{
@@ -25,6 +26,11 @@ export const exampleList = [
 		title:
 			"04. @mixin 배열(Array)에 매개변수 사용하고 @include로 인수 반환하기",
 		component: <MixinArray />,
+	},
+	{
+		id: 5,
+		title: "05. @mixin과 @include로 자주 사용하는 이펙트 재사용",
+		component: <ReuseEffects />,
 	},
 ];
 
