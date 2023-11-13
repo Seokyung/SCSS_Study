@@ -4,6 +4,7 @@ import ResetNormalize from "../examples/02_ResetNormalize";
 import NestedMixin from "../examples/03_NestedMixin";
 import MixinArray from "../examples/04_MixinArray";
 import ReuseEffects from "../examples/05_ReuseEffects";
+import AdvancedExtend from "../examples/06_AdvancedExtend";
 
 export const exampleList = [
 	{
@@ -31,6 +32,12 @@ export const exampleList = [
 		id: 5,
 		title: "05. @mixin과 @include로 자주 사용하는 이펙트 재사용",
 		component: <ReuseEffects />,
+	},
+	{
+		id: 6,
+		title:
+			"06. 특정 선택자 CSS 속성 가져오는 @extend를 활용한 CSS 디자인 재사용",
+		component: <AdvancedExtend />,
 	},
 ];
 
