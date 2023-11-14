@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+// Figma Logo Variables
+$logo-font-family: "Hind Siliguri", sans-serif;
+$logo-font-weight: 500;
+$logo-width: 150px;
+$logo-color: #222;
+$logo-spacing: 3px;
+
+.figma-logo-container {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	.figma {
+		width: $logo-width;
+		text-align: center;
+		> span {
+			display: block;
+			margin-bottom: 0.25rem;
+			color: $logo-color;
+			font-family: $logo-font-family;
+			font-size: ($logo-width/3);
+			font-weight: $logo-font-weight;
+			letter-spacing: $logo-spacing;
+		}
+		.shape {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			span {
+				width: ($logo-width/2);
+				height: ($logo-width/2);
+				background-color: blue;
+				&:nth-child(1) {
+					background-color: #f24e1e;
+					border-radius: 50% 0 0 50%;
+				}
+				&:nth-child(2) {
+					background-color: #ff7262;
+					border-radius: 0 50% 50% 0;
+				}
+				&:nth-child(3) {
+					background-color: #a259ff;
+					border-radius: 50% 0 0 50%;
+				}
+				&:nth-child(4) {
+					background-color: #1abcfe;
+					border-radius: 50%;
+				}
+				&:nth-child(5) {
+					background-color: #0acf83;
+					border-radius: 50% 0 50% 50%;
+				}
+			}
+		}
+	}
+}

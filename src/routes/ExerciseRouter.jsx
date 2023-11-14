@@ -1,11 +1,17 @@
 import { useNavigate, useParams } from "react-router-dom";
 import AnimatedHeart from "../exercises/01_AnimatedHeart";
+import FigmaLogo from "../exercises/02_FigmaLogo";
 
 export const exerciseList = [
 	{
 		id: 1,
 		title: "01. 가상클래스를 활용한 살아있는 애니메이션 하트",
 		component: <AnimatedHeart />,
+	},
+	{
+		id: 2,
+		title: "02. GRID와 변수를 활용해 피그마(Figma) 로고 만들기",
+		component: <FigmaLogo />,
 	},
 ];
 
