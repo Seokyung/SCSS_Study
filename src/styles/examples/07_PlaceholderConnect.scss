@@ -1,0 +1,97 @@
+/* Mixin & Include */
+// Circle Mixin
+/*
+@mixin circle-box {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border: 5px solid #000;
+	border-radius: 50%;
+}
+
+.placeholder-connect-container {
+	.item-box div {
+		@include circle-box;
+		&:nth-child(1) {
+			background-color: crimson;
+		}
+		&:nth-child(2) {
+			background-color: gold;
+		}
+		&:nth-child(3) {
+			background-color: forestgreen;
+		}
+	}
+	// .item1,
+	// .item2,
+	// .item3 {
+	// 	@include circle-box;
+	// }
+	// .item1 {
+	// 	background-color: crimson;
+	// }
+	// .item2 {
+	// 	background-color: gold;
+	// }
+	// .item3 {
+	// 	background-color: forestgreen;
+	// }
+}
+*/
+
+/* Extend */
+// Extend 선택자로 선언해준 스타일을 가져올 경우 CSS 파일에서 필요없는 클래스명도 나타나게 됨
+/*
+.circle-box {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border: 5px solid #000;
+	border-radius: 50%;
+}
+
+.placeholder-connect-container {
+	.item-box {
+		div {
+			@extend .circle-box;
+			&:nth-child(1) {
+				background-color: crimson;
+			}
+			&:nth-child(2) {
+				background-color: gold;
+			}
+			&:nth-child(3) {
+				background-color: forestgreen;
+			}
+		}
+	}
+}
+*/
+
+/* Placeholder % */
+// Placeholder(%) 선택자로 선언해준 스타일을 가져올 경우 CSS 파일에서 필요없는 클래스명이 나타나지 않게 됨
+// Placeholder(%) 선택자로 CSS 파일을 좀 더 깔끔하게 정리할 수 있음
+%circle-box {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border: 5px solid #000;
+	border-radius: 50%;
+}
+
+.placeholder-connect-container {
+	.item-box {
+		div {
+			@extend %circle-box;
+			&:nth-child(1) {
+				background-color: crimson;
+			}
+			&:nth-child(2) {
+				background-color: gold;
+			}
+			&:nth-child(3) {
+				background-color: forestgreen;
+			}
+		}
+	}
+}

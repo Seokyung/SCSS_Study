@@ -5,6 +5,7 @@ import NestedMixin from "../examples/03_NestedMixin";
 import MixinArray from "../examples/04_MixinArray";
 import ReuseEffects from "../examples/05_ReuseEffects";
 import AdvancedExtend from "../examples/06_AdvancedExtend";
+import PlaceholderConnect from "../examples/07_PlaceholderConnect";
 
 export const exampleList = [
 	{
@@ -38,6 +39,11 @@ export const exampleList = [
 		title:
 			"06. 특정 선택자 CSS 속성 가져오는 @extend를 활용한 CSS 디자인 재사용",
 		component: <AdvancedExtend />,
+	},
+	{
+		id: 7,
+		title: "07. 플레이스 홀드(%) 선택자로 CSS 선택자를 연결선택자로 정리하기",
+		component: <PlaceholderConnect />,
 	},
 ];
 
