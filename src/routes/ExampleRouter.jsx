@@ -7,6 +7,7 @@ import ReuseEffects from "../examples/05_ReuseEffects";
 import AdvancedExtend from "../examples/06_AdvancedExtend";
 import PlaceholderConnect from "../examples/07_PlaceholderConnect";
 import MixinParams from "../examples/08_MixinParams";
+import ParentRef from "../examples/09_ParentRef";
 
 export const exampleList = [
 	{
@@ -50,6 +51,11 @@ export const exampleList = [
 		id: 8,
 		title: "08. @mixin에 매개변수를 활용하여 다양한 border-radius 만들기",
 		component: <MixinParams />,
+	},
+	{
+		id: 9,
+		title: "09. 부모요소 참조하여 일관성 있는 html 레이아웃 구조 만들기",
+		component: <ParentRef />,
 	},
 ];
 
