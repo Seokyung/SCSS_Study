@@ -6,8 +6,9 @@ import Theory from "../pages/Theory";
 import Example from "../pages/Example";
 import TheoryRouter from "./TheoryRouter";
 import Exercise from "../pages/Exercise";
-import "../styles/index.scss";
 import ExampleRouter from "./ExampleRouter";
+import ExerciseRouter from "./ExerciseRouter";
+import "../styles/index.scss";
 
 function AppRouter() {
 	return (
@@ -22,6 +23,7 @@ function AppRouter() {
 						<Route path="/examples" element={<Example />} />
 						<Route path="/examples/:chapter" element={<ExampleRouter />} />
 						<Route path="/exercises" element={<Exercise />} />
+						<Route path="/exercises/:chapter" element={<ExerciseRouter />} />
 					</Routes>
 				</div>
 			</BrowserRouter>
