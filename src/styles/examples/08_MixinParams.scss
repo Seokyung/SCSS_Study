@@ -1,0 +1,52 @@
+// border-radius Mixin
+@mixin figure-border-radius($radius) {
+	border-radius: $radius;
+}
+
+.mixin-params-container {
+	.figure-box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 150px;
+			height: 150px;
+			margin: 1rem;
+			color: #fff;
+			font-size: 1.5rem;
+			background-color: deepskyblue;
+			border: 10px solid gold;
+			&:nth-child(1) {
+				@include figure-border-radius(20px);
+			}
+			&:nth-child(2) {
+				@include figure-border-radius(50px);
+			}
+			&:nth-child(3) {
+				@include figure-border-radius(100%);
+				// @include figure-border-radius(50%);
+			}
+			&:nth-child(4) {
+				@include figure-border-radius(50px 0 50px 0);
+			}
+			&:nth-child(5) {
+				@include figure-border-radius(100% 0 0 0);
+			}
+			&:nth-child(6) {
+				@include figure-border-radius(100% 100% 100% 0);
+				// @include figure-border-radius(50% 50% 50% 0);
+			}
+			&:nth-child(7) {
+				@include figure-border-radius(100% 0);
+				// @include figure-border-radius(100% 0 100% 0);
+			}
+			&:nth-child(8) {
+				@include figure-border-radius(100% 100% 0 0);
+				// @include figure-border-radius(50% 50% 0 0);
+			}
+		}
+	}
+}

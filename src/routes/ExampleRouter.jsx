@@ -6,6 +6,7 @@ import MixinArray from "../examples/04_MixinArray";
 import ReuseEffects from "../examples/05_ReuseEffects";
 import AdvancedExtend from "../examples/06_AdvancedExtend";
 import PlaceholderConnect from "../examples/07_PlaceholderConnect";
+import MixinParams from "../examples/08_MixinParams";
 
 export const exampleList = [
 	{
@@ -44,6 +45,11 @@ export const exampleList = [
 		id: 7,
 		title: "07. 플레이스 홀드(%) 선택자로 CSS 선택자를 연결선택자로 정리하기",
 		component: <PlaceholderConnect />,
+	},
+	{
+		id: 8,
+		title: "08. @mixin에 매개변수를 활용하여 다양한 border-radius 만들기",
+		component: <MixinParams />,
 	},
 ];
 
