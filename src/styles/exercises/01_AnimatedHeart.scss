@@ -6,6 +6,31 @@ $heart-size: 100px;
 $heart-color: lightcoral;
 $heart-shadow-color: rgba(205, 91, 91, 0.75);
 
+$slider-width: 250px;
+$slider-height: 15px;
+$slider-bg-color: #fff;
+$slider-thumb-color: lightcoral;
+$slider-thumb-hover-color: rgb(205, 101, 101);
+
+@mixin slider-thumb {
+	width: $slider-height + 5;
+	height: $slider-height + 5;
+	background-color: $slider-thumb-color;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	&:hover,
+	&:active {
+		width: $slider-height + 10;
+		height: $slider-height + 10;
+		background-color: $slider-thumb-hover-color;
+	}
+}
+
 .animated-heart-container {
 	position: relative;
 	display: flex;
@@ -44,17 +69,38 @@ $heart-shadow-color: rgba(205, 91, 91, 0.75);
 		position: absolute;
 		bottom: 5%;
 		display: flex;
+		align-items: center;
 		gap: 1.25rem;
-		input[type="range"] {
-			width: 250px;
+		.slider {
+			width: $slider-width;
+			height: $slider-height;
+			border-radius: 20px;
+			background-color: $slider-bg-color;
+			-webkit-appearance: none;
+			appearance: none;
+			outline: none;
+			opacity: 0.85;
+			transition-property: opacity;
+			transition-duration: 0.2s;
+			transition-timing-function: ease-in-out;
+			&:hover {
+				opacity: 1;
+			}
+			&::-webkit-slider-thumb {
+				@include slider-thumb;
+			}
+			&::-moz-range-thumb {
+				@include slider-thumb;
+			}
 		}
 		label {
-			padding: 0.5rem 0.75rem;
+			padding: 0.5rem;
 			width: 2.25rem;
 			color: #fff;
-			font-size: 1.5rem;
+			font-size: 1.25rem;
+			font-weight: 500;
 			text-align: center;
-			background-color: #777;
+			background-color: $slider-thumb-hover-color;
 			border-radius: 10px;
 		}
 	}

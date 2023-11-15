@@ -25,6 +25,8 @@ function AnimatedHeart() {
 					min="0"
 					max="5"
 					step="0.1"
+					list="speed-markers"
+					className="slider"
 					value={beatingSpeed}
 					onChange={onSpeedChange}
 				/>
