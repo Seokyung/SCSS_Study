@@ -2,28 +2,34 @@ import { useState } from "react";
 import "../styles/exercises/01_AnimatedHeart.scss";
 
 function AnimatedHeart() {
-	const [isChanged, setIsChanged] = useState(false);
-	// const heartBeat = getComputedStyle(
-	// 	document.querySelector(":root")
-	// ).getPropertyValue("--beating-speed");
+	const [beatingSpeed, setBeatingSpeed] = useState(1);
 
-	const onBtnClick = () => {
-		if (isChanged) {
-			document
-				.querySelector(":root")
-				.style.setProperty("--beating-speed", "1s");
-		} else {
-			document
-				.querySelector(":root")
-				.style.setProperty("--beating-speed", "2s");
-		}
-		setIsChanged((prev) => !prev);
+	const onSpeedChange = (e) => {
+		const {
+			target: { value },
+		} = e;
+		document
+			.querySelector(":root")
+			.style.setProperty("--beating-speed", `${value}s`);
+		setBeatingSpeed(value);
 	};
 
 	return (
 		<div className="animated-heart-container">
 			<div className="heart"></div>
-			<button onClick={onBtnClick}>Change</button>
+			<div className="speed-range">
+				<input
+					type="range"
+					id="speed"
+					name="speed"
+					min="0"
+					max="5"
+					step="0.1"
+					value={beatingSpeed}
+					onChange={onSpeedChange}
+				/>
+				<label htmlFor="speed">{beatingSpeed}</label>
+			</div>
 		</div>
 	);
 }

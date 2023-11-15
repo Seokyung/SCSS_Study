@@ -2,6 +2,7 @@
 	--beating-speed: 1s;
 }
 
+$heart-size: 100px;
 $heart-color: lightcoral;
 $heart-shadow-color: rgba(205, 91, 91, 0.75);
 
@@ -16,8 +17,8 @@ $heart-shadow-color: rgba(205, 91, 91, 0.75);
 	background-color: #222;
 	.heart {
 		position: relative;
-		width: 120px;
-		height: 120px;
+		width: $heart-size;
+		height: $heart-size;
 		background-color: $heart-color;
 		box-shadow: 0 -10px 100px $heart-shadow-color,
 			0 -10px 150px $heart-shadow-color, 0 -10px 200px $heart-shadow-color;
@@ -39,12 +40,23 @@ $heart-shadow-color: rgba(205, 91, 91, 0.75);
 			left: -50%;
 		}
 	}
-	.heart-beat {
-		animation: heart-beat-animation var(--beating-speed) linear infinite;
-	}
-	button {
+	.speed-range {
 		position: absolute;
-		bottom: 1.5rem;
+		bottom: 5%;
+		display: flex;
+		gap: 1.25rem;
+		input[type="range"] {
+			width: 250px;
+		}
+		label {
+			padding: 0.5rem 0.75rem;
+			width: 2.25rem;
+			color: #fff;
+			font-size: 1.5rem;
+			text-align: center;
+			background-color: #777;
+			border-radius: 10px;
+		}
 	}
 }
 
