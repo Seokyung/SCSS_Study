@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap");
+
+@mixin transition-style {
+	transition-property: all;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+}
+
+.dropdown-content-container {
+	width: 100%;
+	background-color: #000;
+	div,
+	h1 {
+		font-family: "Raleway", sans-serif;
+	}
+	.faq {
+		color: #fff;
+		&-inner {
+			padding: 1rem;
+			h1 {
+				margin: 0;
+				margin-top: 0.25rem;
+				margin-bottom: 1rem;
+				font-size: 2rem;
+				text-align: center;
+			}
+		}
+		&-title {
+			position: relative;
+			margin: 0.25rem 0;
+			padding: 0.625rem;
+			background-color: #333;
+			cursor: pointer;
+			&:hover {
+				background-color: #666;
+			}
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				background-color: #fff;
+				transform: translateY(-50%);
+				@include transition-style;
+			}
+			&::before {
+				right: 0.625rem;
+				width: 18px;
+				height: 2px;
+			}
+			&::after {
+				right: (0.625rem+0.5rem);
+				width: 2px;
+				height: 18px;
+			}
+		}
+		&-content {
+			max-height: 0;
+			overflow: hidden;
+			@include transition-style;
+			div {
+				padding: 0.625rem;
+			}
+		}
+		.active::after {
+			transform: translateY(-50%) rotate(90deg);
+		}
+		.show {
+			max-height: 800px;
+		}
+	}
+}
