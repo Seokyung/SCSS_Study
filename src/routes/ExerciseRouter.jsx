@@ -22,7 +22,7 @@ export const exerciseList = [
 	},
 	{
 		id: 4,
-		title: "04. 아코디언 드롭다운 컨텐츠",
+		title: "04. 아코디언 드롭다운 컨텐츠 (with JS)",
 		component: <DropdownContent />,
 	},
 ];
