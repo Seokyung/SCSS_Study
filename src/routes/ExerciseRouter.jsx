@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import AnimatedHeart from "../exercises/01_AnimatedHeart";
 import FigmaLogo from "../exercises/02_FigmaLogo";
+import DropdownMenu from "../exercises/03_DropdownMenu";
 
 export const exerciseList = [
 	{
@@ -12,6 +13,11 @@ export const exerciseList = [
 		id: 2,
 		title: "02. GRID와 변수를 활용해 피그마(Figma) 로고 만들기",
 		component: <FigmaLogo />,
+	},
+	{
+		id: 3,
+		title: "03. 아코디언 드롭다운 메뉴",
+		component: <DropdownMenu />,
 	},
 ];
 
