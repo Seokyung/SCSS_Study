@@ -28,8 +28,7 @@ export const exerciseList = [
 	},
 	{
 		id: 5,
-		title:
-			"05. 구글 아이콘으로 빛나는 체크박스 만들기 (Variable, Color Function)",
+		title: "05. 빛나는 체크박스 버튼 만들기 (Variable, Color Function)",
 		component: <ShiningCheckbox />,
 	},
 ];
