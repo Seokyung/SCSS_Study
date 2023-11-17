@@ -3,6 +3,7 @@ import AnimatedHeart from "../exercises/01_AnimatedHeart";
 import FigmaLogo from "../exercises/02_FigmaLogo";
 import DropdownMenu from "../exercises/03_DropdownMenu";
 import DropdownContent from "../exercises/04_DropdownContent";
+import ShiningCheckbox from "../exercises/05_ShiningCheckbox";
 
 export const exerciseList = [
 	{
@@ -24,6 +25,12 @@ export const exerciseList = [
 		id: 4,
 		title: "04. 아코디언 드롭다운 컨텐츠 (with JS)",
 		component: <DropdownContent />,
+	},
+	{
+		id: 5,
+		title:
+			"05. 구글 아이콘으로 빛나는 체크박스 만들기 (Variable, Color Function)",
+		component: <ShiningCheckbox />,
 	},
 ];
 
