@@ -1,0 +1,71 @@
+/* Variables */
+$login-form-color: royalblue;
+
+/* Transition Style */
+@mixin transition-style {
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+.login-form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	.login-form {
+		display: flex;
+		flex-direction: column;
+		padding: 1.5rem;
+		width: 350px;
+		height: auto;
+		border-radius: 10px;
+		box-sizing: border-box;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		h1 {
+			margin-top: 0;
+			font-size: 1.75rem;
+			font-weight: normal;
+			text-align: center;
+		}
+		input:not([type="submit"]) {
+			margin: 0.5rem 0;
+			padding: 0.5rem;
+			padding-left: 2.25rem;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			outline: none;
+			@include transition-style;
+			&[type="text"] {
+				background: url("../icons/icon_user.svg") no-repeat center left 5px;
+			}
+			&[type="password"] {
+				background: url("../icons/icon_passwd.svg") no-repeat center left 5px;
+			}
+			&[type="email"] {
+				background: url("../icons/icon_email.svg") no-repeat center left 5px;
+			}
+			&:hover {
+				border-color: $login-form-color;
+				box-shadow: 0 0 5px
+					transparentize($color: $login-form-color, $amount: 0.5);
+			}
+		}
+		input[type="submit"] {
+			cursor: pointer;
+			margin-top: 0.5rem;
+			padding: 0.75rem 1rem;
+			color: #fff;
+			font-size: 1rem;
+			font-weight: 600;
+			background-color: $login-form-color;
+			border: none;
+			border-radius: 5px;
+			@include transition-style;
+			&:hover {
+				background-color: #333;
+			}
+		}
+	}
+}

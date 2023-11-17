@@ -4,6 +4,7 @@ import FigmaLogo from "../exercises/02_FigmaLogo";
 import DropdownMenu from "../exercises/03_DropdownMenu";
 import DropdownContent from "../exercises/04_DropdownContent";
 import ShiningCheckbox from "../exercises/05_ShiningCheckbox";
+import LoginForm from "../exercises/06_LoginForm";
 
 export const exerciseList = [
 	{
@@ -30,6 +31,11 @@ export const exerciseList = [
 		id: 5,
 		title: "05. 빛나는 체크박스 버튼 만들기 (Variable, Color Function)",
 		component: <ShiningCheckbox />,
+	},
+	{
+		id: 6,
+		title: "06. 로그인 폼 디자인 (속성선택자)",
+		component: <LoginForm />,
 	},
 ];
 
