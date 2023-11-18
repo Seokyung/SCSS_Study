@@ -25,6 +25,7 @@ const portfolioList = [
 	{
 		id: 4,
 		imgUrl: portfolio_4,
+		className: "focus",
 	},
 	{
 		id: 5,
@@ -52,18 +53,12 @@ function BlogPost() {
 	const renderPortfolioList = () => {
 		return portfolioList.map((item) => {
 			return (
-				<div key={item.id} className="item-box">
-					<div>
-						<a href="#none">
-							<img
-								src={item.imgUrl}
-								alt={`portfolio_${item.id}_thumbnail`}
-								width={100}
-							/>
-						</a>
-						<i className="xi-plus-thin"></i>
-						<span>Website Portfolio {item.id}</span>
-					</div>
+				<div key={item.id} className={item.className ? item.className : ""}>
+					<a href="#none">
+						<img src={item.imgUrl} alt={`portfolio_${item.id}_thumbnail`} />
+					</a>
+					<i className="xi-plus-thin"></i>
+					<span>Website Portfolio #0{item.id}</span>
 				</div>
 			);
 		});
@@ -75,7 +70,7 @@ function BlogPost() {
 				<h1>
 					Frontend Demo <span>Portfolio</span>
 				</h1>
-				{renderPortfolioList()}
+				<div className="item-box">{renderPortfolioList()}</div>
 			</section>
 		</div>
 	);
