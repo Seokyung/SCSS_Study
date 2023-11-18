@@ -5,6 +5,7 @@ import DropdownMenu from "../exercises/03_DropdownMenu";
 import DropdownContent from "../exercises/04_DropdownContent";
 import ShiningCheckbox from "../exercises/05_ShiningCheckbox";
 import LoginForm from "../exercises/06_LoginForm";
+import BlogPost from "../exercises/07_BlogPost";
 
 export const exerciseList = [
 	{
@@ -36,6 +37,11 @@ export const exerciseList = [
 		id: 6,
 		title: "06. 로그인 폼 디자인 (속성선택자)",
 		component: <LoginForm />,
+	},
+	{
+		id: 7,
+		title: "07. GRID 반응형 포트폴리오 섹션 레이아웃 (Blog Post Style)",
+		component: <BlogPost />,
 	},
 ];
 

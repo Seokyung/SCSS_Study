@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+// Variables
+$font-size-default: 1rem;
+$font-size-heading: 2.25rem;
+
+// Mixins
+@mixin default {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	padding: 1rem;
+	color: #222;
+	line-height: 1.5rem;
+	background-color: #f8f8f8;
+}
+
+@mixin heading {
+	position: relative;
+	margin: 0;
+	margin-bottom: 1.5rem;
+	padding-bottom: 1.5rem;
+	width: fit-content;
+	font-family: "Agbalumo";
+	font-size: $font-size-heading;
+	font-weight: normal;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		width: 85%;
+		height: 2px;
+		background-color: royalblue;
+		transform: translateX(-50%);
+	}
+	span {
+		color: royalblue;
+		font-family: "Agbalumo";
+	}
+}
+
+/* Portfolio Section */
+.blog-post-container {
+	@include default;
+	h1 {
+		@include heading;
+	}
+}
