@@ -27,18 +27,19 @@ $font-color-hover: #fff;
 	margin: 0;
 	margin-top: 0.5rem;
 	margin-bottom: 1.5rem;
-	padding-bottom: 1.625rem;
+	padding-bottom: 1.5rem;
 	font-family: "Agbalumo";
 	font-size: $font-size-heading;
 	font-weight: normal;
 	text-align: center;
+	line-height: 2rem;
 	box-sizing: border-box;
 	&::before {
 		content: "";
 		position: absolute;
 		left: 50%;
 		bottom: 0;
-		width: 300px;
+		width: 150px;
 		height: 4px;
 		background-color: royalblue;
 		border-radius: 10px;
@@ -98,7 +99,7 @@ $font-color-hover: #fff;
 					position: absolute;
 					bottom: -60px;
 					width: 100%;
-					padding-bottom: 0.5rem;
+					padding-bottom: 0.75rem;
 					color: $font-color-hover;
 					font-size: $font-size-sub;
 					line-height: normal;
@@ -134,8 +135,59 @@ $font-color-hover: #fff;
 				}
 			}
 			.focus {
+				// grid-area: span 2 / span 2;
 				grid-column: span 2;
 				grid-row: span 2;
+			}
+		}
+	}
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 768px) and (max-width: 1366px) {
+	.blog-post-container {
+		height: auto;
+		.portfolio {
+			h1 {
+				font-size: $font-size-heading * 0.9;
+				padding-bottom: 1.375rem;
+			}
+			.item-box {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+	}
+}
+
+/* Mobile Breakpoint */
+@media (min-width: 480px) and (max-width: 768px) {
+	.blog-post-container {
+		height: auto;
+		.portfolio {
+			h1 {
+				font-size: $font-size-heading * 0.85;
+				padding-bottom: 1.25rem;
+			}
+			.item-box {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.blog-post-container {
+		height: auto;
+		.portfolio {
+			h1 {
+				font-size: $font-size-heading * 0.8;
+				padding-bottom: 1rem;
+			}
+			.item-box {
+				grid-template-columns: repeat(1, 1fr);
+				.focus {
+					grid-area: span 1 / span 1;
+				}
 			}
 		}
 	}

@@ -25,11 +25,11 @@ const portfolioList = [
 	{
 		id: 4,
 		imgUrl: portfolio_4,
-		className: "focus",
 	},
 	{
 		id: 5,
 		imgUrl: portfolio_5,
+		className: "focus",
 	},
 	{
 		id: 6,
