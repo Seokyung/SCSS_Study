@@ -1,13 +1,17 @@
 import "../styles/exercises/08_ProjectInfo.scss";
-import rolling_logo from "../img/Rolling-Rolling_logo.png";
+import thumbnail_1 from "../img/web-portfolio-01.jpg";
+import thumbnail_2 from "../img/web-portfolio-02.jpg";
+import thumbnail_3 from "../img/web-portfolio-03.jpg";
 
 function ProjectInfo() {
 	return (
 		<div className="project-info-container">
 			<section className="portfolio">
-				<h1>Frontend Demo Portfolio</h1>
+				<div className="headline">
+					<h1>Frontend Demo Portfolio</h1>
+				</div>
 				<div className="item-box">
-					<aside className="item thumbnail">
+					<aside className="item">
 						<b>
 							Toy Project <span>2023.03 - 2023.06</span>
 						</b>
@@ -46,15 +50,31 @@ function ProjectInfo() {
 					</aside>
 					<div className="item thumbnail">
 						<div className="photo">
-							<img src={rolling_logo} alt="rolling-rolling-logo" width={100} />
+							<img src={thumbnail_1} alt="rolling-rolling-logo" />
 						</div>
 						<span className="portfolio-title">
 							<a href="#pc">PC</a>
 							<a href="#mobile">Mobile</a>
 						</span>
 					</div>
-					<div className="item thumbnail"></div>
-					<div className="item thumbnail"></div>
+					<div className="item thumbnail">
+						<div className="photo">
+							<img src={thumbnail_2} alt="rolling-rolling-logo" />
+						</div>
+						<span className="portfolio-title">
+							<a href="#pc">PC</a>
+							<a href="#mobile">Mobile</a>
+						</span>
+					</div>
+					<div className="item thumbnail">
+						<div className="photo">
+							<img src={thumbnail_3} alt="rolling-rolling-logo" />
+						</div>
+						<span className="portfolio-title">
+							<a href="#pc">PC</a>
+							<a href="#mobile">Mobile</a>
+						</span>
+					</div>
 				</div>
 			</section>
 		</div>
