@@ -7,3 +7,9 @@
 	-moz-osx-font-smoothing: grayscale;
 	background-color: $secondary-color;
 }
+
+@mixin transition-style {
+	transition-property: all;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
