@@ -8,8 +8,8 @@
 	background-color: $secondary-color;
 }
 
-@mixin transition-style {
+@mixin transition-style($duration) {
 	transition-property: all;
-	transition-duration: 0.25s;
+	transition-duration: $duration;
 	transition-timing-function: ease-in-out;
 }

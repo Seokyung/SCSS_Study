@@ -1,0 +1,58 @@
+@import "../mixin";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+// map-get Array Parameter
+$font-family: (
+	kor: "Noto Sans KR",
+	eng: "",
+	headline: "Agbalumo",
+);
+$font-color: (
+	default: #222,
+	primary: midnightblue,
+	secondary: #050404,
+);
+$font-size: (
+	default: 1rem,
+	lg-heading: 2.5rem,
+	md-heading: 2rem,
+	sm-heading: 1.75rem,
+);
+$bg-color: (
+	primary: #fff,
+	secondary: #f8f8f8,
+);
+$btn-color: (
+	pc: darkslateblue,
+	moblie: #555,
+);
+
+.project-info-container {
+	background-color: map-get($map: $bg-color, $key: secondary);
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	button,
+	input {
+		cursor: pointer;
+		outline: none;
+	}
+	h1,
+	h2 {
+		margin: 0;
+		font-weight: normal;
+	}
+	.portfolio {
+		h1 {
+			margin-bottom: 1.5rem;
+			color: map-get($map: $font-color, $key: primary);
+			font-family: map-get($map: $font-family, $key: headline);
+			font-size: map-get($map: $font-size, $key: lg-heading);
+			font-weight: 600;
+			line-height: 2rem;
+		}
+	}
+}

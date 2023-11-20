@@ -6,6 +6,7 @@ import DropdownContent from "../exercises/04_DropdownContent";
 import ShiningCheckbox from "../exercises/05_ShiningCheckbox";
 import LoginForm from "../exercises/06_LoginForm";
 import BlogPost from "../exercises/07_BlogPost";
+import ProjectInfo from "../exercises/08_ProjectInfo";
 
 export const exerciseList = [
 	{
@@ -42,6 +43,11 @@ export const exerciseList = [
 		id: 7,
 		title: "07. GRID 반응형 포트폴리오 섹션 레이아웃 (Blog Post Style)",
 		component: <BlogPost />,
+	},
+	{
+		id: 8,
+		title: "08. GRID 반응형 포트폴리오 섹션 레이아웃 (Project Info Style)",
+		component: <ProjectInfo />,
 	},
 ];
 
