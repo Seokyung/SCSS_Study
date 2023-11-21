@@ -43,8 +43,12 @@ function ProjectInfo() {
 						</p>
 						<p className="portfolio-info">
 							<b>Link</b>
-							<a href="https://rolling-rolling.web.app/">Service</a>
-							<a href="https://github.com/Seokyung/Rolling-Rolling">GitHub</a>
+							<span>
+								<a href="https://rolling-rolling.web.app/">Service</a>
+							</span>
+							<span>
+								<a href="https://github.com/Seokyung/Rolling-Rolling">GitHub</a>
+							</span>
 						</p>
 					</aside>
 					<div className="item thumbnail">
