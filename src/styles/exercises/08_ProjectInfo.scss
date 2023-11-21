@@ -83,8 +83,7 @@ $btn-color: (
 		display: grid;
 		justify-content: center;
 		align-content: center;
-		// height: 100%;
-		padding: 1.25rem;
+		padding: 1.25rem 3rem;
 		background: url("../img/background.png") no-repeat top center;
 		.headline {
 			margin-top: 1rem;
@@ -210,7 +209,7 @@ $btn-color: (
 			.headline {
 				h1 {
 					font-size: map-get($map: $font-size, $key: sm-heading);
-					line-height: 3rem;
+					line-height: 3.25rem;
 				}
 			}
 			.item-box {
