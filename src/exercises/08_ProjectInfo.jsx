@@ -12,9 +12,10 @@ function ProjectInfo() {
 				</div>
 				<div className="item-box">
 					<aside className="item">
-						<b>
-							Toy Project <span>2023.03 - 2023.06</span>
-						</b>
+						<div className="portfolio-sub">
+							<b>Toy Project</b>
+							<span>2023.03 - 2023.06</span>
+						</div>
 						<h2>Rolling-Rolling</h2>
 						<p>
 							<q>웹으로 즐기는 추억의 롤링페이퍼</q>
@@ -42,10 +43,8 @@ function ProjectInfo() {
 						</p>
 						<p className="portfolio-info">
 							<b>Link</b>
-							<a href="https://rolling-rolling.web.app/">
-								https://rolling-rolling.web.app/
-							</a>
-							<a href="https://github.com/Seokyung/Rolling-Rolling">github</a>
+							<a href="https://rolling-rolling.web.app/">Service</a>
+							<a href="https://github.com/Seokyung/Rolling-Rolling">GitHub</a>
 						</p>
 					</aside>
 					<div className="item thumbnail">
@@ -53,8 +52,13 @@ function ProjectInfo() {
 							<img src={thumbnail_1} alt="rolling-rolling-logo" />
 						</div>
 						<span className="portfolio-title">
-							<a href="#pc">PC</a>
-							<a href="#mobile">Mobile</a>
+							Preview #01
+							<a className="btn-view pc" href="#pc">
+								PC
+							</a>
+							<a className="btn-view mobile" href="#mobile">
+								Mobile
+							</a>
 						</span>
 					</div>
 					<div className="item thumbnail">
@@ -62,8 +66,13 @@ function ProjectInfo() {
 							<img src={thumbnail_2} alt="rolling-rolling-logo" />
 						</div>
 						<span className="portfolio-title">
-							<a href="#pc">PC</a>
-							<a href="#mobile">Mobile</a>
+							Preview #02
+							<a className="btn-view pc" href="#pc">
+								PC
+							</a>
+							<a className="btn-view mobile" href="#mobile">
+								Mobile
+							</a>
 						</span>
 					</div>
 					<div className="item thumbnail">
@@ -71,8 +80,13 @@ function ProjectInfo() {
 							<img src={thumbnail_3} alt="rolling-rolling-logo" />
 						</div>
 						<span className="portfolio-title">
-							<a href="#pc">PC</a>
-							<a href="#mobile">Mobile</a>
+							Preview #03
+							<a className="btn-view pc" href="#pc">
+								PC
+							</a>
+							<a className="btn-view mobile" href="#mobile">
+								Mobile
+							</a>
 						</span>
 					</div>
 				</div>
